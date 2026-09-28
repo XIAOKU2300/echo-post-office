@@ -23,6 +23,7 @@
 import { randomInt, randomUUID } from 'node:crypto'
 import * as storeApi from '../lib/store.js'
 import { sendQQMedia } from '../lib/qq-media.js'
+import { grantDailyFortune } from '../lib/daily-fortune.js'
 import { loadCompanionRoster, meetCompanion, recordCompanionActivity, claimCompanionReward, companionPanel, companionCollection } from '../lib/companions.js'
 
 /* ============================================================================
@@ -1798,6 +1799,7 @@ const companionRows = () => [
 ]
 HANDLERS.wife = async ctx => {
   const result = meetCompanion(ctx.profile, ctx.uid, ctx.day, await loadCompanionRoster())
+  if (!result.error) grantDailyFortune(ctx.profile, ctx.profile.companions.today, ctx.uid)
   const spec = result.error ? { title: '今日老婆', lead: result.error, tiles: [] } : companionPanel(ctx.profile, ctx.day)
   return ctx.plan.panel(spec, companionRows(), { kind: 'wife' })
 }
