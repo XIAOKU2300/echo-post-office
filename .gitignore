@@ -1,0 +1,12 @@
+node_modules/
+.env
+.env.*
+data/
+assets/
+.update-backups/
+*.log
+*.bundle
+lib/presentation.ui-candidate.js
+preview.html
+output/
+tmp/

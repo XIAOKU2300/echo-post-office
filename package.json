@@ -1,0 +1,25 @@
+{
+  "name": "echo-post-office",
+  "version": "1.0.1",
+  "private": true,
+  "description": "TRSS-Yunzai 回响邮局：七合一每日小游戏（十连 / 刮刮乐 / 福袋 / 图鉴兑换佩戴 / 档案猜谜排行 / 派遣 / 群内对战）",
+  "type": "module",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "test": "node tests/integration.test.js",
+    "test:markdown": "node --test tests/markdown.test.js",
+    "check": "node --check index.js && node --check apps/index.js && node --check lib/store.js && node --check lib/presentation.js && node --check lib/rewards.js && node --check lib/adventures.js && node --check tests/integration.test.js && node --check tests/adventures.test.js && node --check tests/foundation.test.js && node --check tests/markdown.test.js"
+  },
+  "keywords": [
+    "yunzai",
+    "trss-yunzai",
+    "qqbot",
+    "keyboard",
+    "game",
+    "plugin"
+  ],
+  "license": "MIT"
+}
