@@ -23,6 +23,7 @@
 import { randomInt, randomUUID } from 'node:crypto'
 import * as storeApi from '../lib/store.js'
 import { sendQQMedia } from '../lib/qq-media.js'
+import { loadCompanionRoster, meetCompanion, recordCompanionActivity, claimCompanionReward, companionPanel, companionCollection } from '../lib/companions.js'
 
 /* ============================================================================
  * 1. 运行参数
@@ -596,6 +597,9 @@ function unwrapResult(raw, fallbackProfile) {
  * 别名按整词匹配（取命令词的第一个词），因此不会互相抢占。
  */
 const COMMAND_TABLE = [
+  ['wife', 'wife', '今日老婆', '今日老婆', '老婆', 'wife'],
+  ['wifeReward', 'wife', '同行奖励', '同行奖励'],
+  ['wifeCollection', 'wife', '同行收藏', '同行收藏'],
   ['menu', 'menu', '回响邮局', '', '菜单', '面板', '回响邮局', 'menu'],
   ['help', 'menu', '玩法说明', '帮助', '玩法', '规则', 'help'],
   ['selfCheck', 'menu', '回响自检', '自检', '诊断', 'check', 'selfcheck'],
@@ -634,7 +638,7 @@ export function resolveCommandWord(word) {
 
 /** 解析命令文本，兼容按钮 payload「命令|操作人#面板令牌」与 type2 回显 */
 export function parseCommand(raw) {
-  const text = String(raw ?? '')
+  const text = String(raw ?? '').replace(/^\s*#?今日老婆(?=\s|$|\|)/, '#回响今日老婆')
   if (!text.trim()) return null
   const [head, ...rest] = text.split('|')
   const body = head.trim()
@@ -1348,7 +1352,12 @@ export function createEngine(options = {}) {
         } else if (!isResultish(raw)) {
           lastError = new Error(`${fnName}() 返回值不符合 {profile,result,error}`)
         } else {
-          return unwrapResult(raw, ctx.profile)
+          const output = unwrapResult(raw, ctx.profile)
+          if (!output.error) {
+            const notice = recordCompanionActivity(ctx.profile, ctx.day, fnName, output.result)
+            if (notice) (ctx.companionNotices ||= []).push(notice)
+          }
+          return output
         }
       } catch (error) {
         lastError = error
@@ -1717,6 +1726,10 @@ export function createEngine(options = {}) {
       const handler = HANDLERS[command.name] || HANDLERS.menu
       const result = await handler(ctx)
       const items = result?.items || ctx.plan.items
+      if (ctx.companionNotices?.length && items.at(-1)?.spec) {
+        const spec = items.at(-1).spec
+        spec.footer = [spec.footer, ...ctx.companionNotices].filter(Boolean).join('\n')
+      }
       return { commit: result?.commit !== false, items }
     })
 
@@ -1779,6 +1792,24 @@ function profileBrief(ctx) {
 
 const HANDLERS = {}
 
+const companionRows = () => [
+  [['一起十连', `${config.prefix}十连`], ['一起派遣', `${config.prefix}派遣`], ['一起刮卡', `${config.prefix}刮刮乐`]],
+  [['同行奖励', `${config.prefix}同行奖励`], ['同行收藏', `${config.prefix}同行收藏`], ['返回菜单', `${config.prefix}`]],
+]
+HANDLERS.wife = async ctx => {
+  const result = meetCompanion(ctx.profile, ctx.uid, ctx.day, await loadCompanionRoster())
+  const spec = result.error ? { title: '今日老婆', lead: result.error, tiles: [] } : companionPanel(ctx.profile, ctx.day)
+  return ctx.plan.panel(spec, companionRows(), { kind: 'wife' })
+}
+HANDLERS.wifeReward = async ctx => {
+  const result = claimCompanionReward(ctx.profile, ctx.day)
+  const spec = companionPanel(ctx.profile, ctx.day)
+  spec.lead = [result.error || result.text, spec.lead].filter(Boolean).join('\n')
+  return ctx.plan.panel(spec, companionRows(), { kind: 'wife' })
+}
+HANDLERS.wifeCollection = async ctx => ctx.plan.panel(companionCollection(ctx.profile), [[['今日老婆', `${config.prefix}今日老婆`], ['返回菜单', `${config.prefix}`]]], { kind: 'wife' })
+
+
 HANDLERS.menu = async (ctx) => {
   const brief = profileBrief(ctx).split('｜').slice(1).join('｜').replace(/^今日剩余\s*/, '')
   const lead = [`星屑 ${wallet(ctx.profile)} · ${ctx.day}`, brief].filter(Boolean).join('\n')
@@ -1787,11 +1818,13 @@ HANDLERS.menu = async (ctx) => {
     [['今日档案', `${config.prefix}档案`], ['派遣出发', `${config.prefix}派遣`], ['歪不歪', `${config.prefix}约战`]],
     [['个人收藏馆', `${config.prefix}图鉴`], ['兑换奖励', `${config.prefix}兑换`], ['派遣领取', `${config.prefix}领取`]],
     [['玩法说明', `${config.prefix}玩法`], ['群排行', `${config.prefix}排行`], ['派遣相册', `${config.prefix}相册`]],
+    [['今日老婆', `${config.prefix}今日老婆`], ['同行收藏', `${config.prefix}同行收藏`], ['同行奖励', `${config.prefix}同行奖励`]],
   ]
   return ctx.plan.panel({ title: '回响邮局', lead, tiles: [], mode: 'row', footer: '' }, rows, { kind: 'menu' })
 }
 
 const GAME_HELP = [
+  { key: '今日老婆', label: '今日老婆', rule: '每天领取一位鸣潮女角色，当天固定，亲密度跨天保留。', action: '先领取，再完成十连、刮卡、福袋、派遣、档案作答或图鉴兑换；每类每天只计一次。', reward: '每类亲密度 +2；完成三类可领取星屑 +10、亲密度 +5，每天一次。', start: '今日老婆' },
   { key: '十连', label: '十连补给', rule: '每天免费十连 2 次；每 30 抽必出金，金卡必为 UP。', action: '点「开始十连」，结果一张图；重复卡变成星屑。', reward: '收集原创信件与套系，星屑可兑换指定卡。', start: '十连' },
   { key: '刮刮乐', label: '星愿刮刮乐', rule: '每天 2 张，九格必有中奖线；三连同图是大奖。', action: '点「一键全刮」，也能逐格刮开。', reward: '领取星屑，大奖可能附赠金卡。', start: '刮刮乐 全刮' },
   { key: '福袋', label: '连锁福袋', rule: '每天 1 次；福袋可能再开出福袋，最多 12 连。', action: '点「打开福袋」自动走完整条连锁。', reward: '连锁越长奖励越好，10 连及以上解锁称号。', start: '福袋' },
@@ -2505,7 +2538,7 @@ async function runFromPlugin(instance, options = {}) {
   if (options.buttonOnly && !extractButtonData(e)) return false
   if (!options.buttonOnly) {
     const first = input.split('|')[0].trim()
-    if (!/(回响|echo)/i.test(first)) return false
+    if (!/(回响|echo|今日老婆)/i.test(first)) return false
   }
   try {
     const result = await engine.handle(e, { input })
@@ -2536,6 +2569,7 @@ export class EchoPostOffice extends plugin {
       event: 'message',
       priority: 1,
       rule: [
+        { reg: '^#?今日老婆(?:\\s|$|\\|)', fnc: 'route' },
         { reg: '^\\s*[#/]?\\s*回响', fnc: 'route' },
         { reg: '^\\s*echo[\\s_-]*(post)?[\\s_-]*(office)?', fnc: 'route' },
       ],

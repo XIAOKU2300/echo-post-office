@@ -1,0 +1,2 @@
+# Only selected companion artwork is shipped; other imported art stays local.
+*.webp

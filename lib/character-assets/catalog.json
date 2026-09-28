@@ -1,0 +1,466 @@
+[
+  {
+    "id": "ww_1",
+    "name": "秧秧",
+    "characterId": "1402",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_1_UI.webp",
+    "sha256": "8fe807ea821a3ec3695e6bfac9c33066206560dd12c34eac059b4feb02b49e0a",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_2",
+    "name": "炽霞",
+    "characterId": "1202",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_2_UI.webp",
+    "sha256": "30d723d464e135bf3b8c80dfa0cc143d4e39fb5a9ad7e2a089c77e4f4af02013",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_3",
+    "name": "维里奈",
+    "characterId": "1503",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_3_UI.webp",
+    "sha256": "3e990c5f78d9c2e5c39241a0da605930b951ed851572188388c45257d4cd2891",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_4",
+    "name": "漂泊者·男",
+    "characterId": "1309/1406/1501/1605",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_4_UI.webp",
+    "sha256": "345c4663a25797c72c801f010cd3d28e9551d7e1637725a932dea1570c25294a",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_5",
+    "name": "漂泊者·女",
+    "characterId": "1310/1408/1502/1604",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_5_UI.webp",
+    "sha256": "709b973486dac94f96e6ae17619c87ad40f5e0d5f9abe911a60c5fbe649321a1",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_6",
+    "name": "白芷",
+    "characterId": "1103",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_6_UI.webp",
+    "sha256": "ea724175d3c07d2822a6885bcb6c20afd201fa67497d9f4a420531e0128f56e6",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_7",
+    "name": "散华",
+    "characterId": "1102",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_7_UI.webp",
+    "sha256": "102126b81d33f6a56b51c7b5138d1fdeffdb7cb1d91430bb22d08abac94a4bbd",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_8",
+    "name": "安可",
+    "characterId": "1203",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_8_UI.webp",
+    "sha256": "cd22f4953ae39444f6b0533804fc8b9d993531a843c82f150047a8e973f317fc",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_9",
+    "name": "桃祈",
+    "characterId": "1601",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_9_UI.webp",
+    "sha256": "528af5eab51c8519ea51aa9524441e723fabf947175f0e589941c8d94d2d4ffe",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_10",
+    "name": "丹瑾",
+    "characterId": "1602",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_10_UI.webp",
+    "sha256": "7475de6afc24d5205f733a6248191c62d412610be6385c4d9630caa5b397a39e",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_11",
+    "name": "忌炎",
+    "characterId": "1404",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_11_UI.webp",
+    "sha256": "ec28c128184e8bd10450000a1c5c3111b0537c8a8cb274e72bc9fa4fc0e4db0c",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_12",
+    "name": "秋水",
+    "characterId": "1403",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_12_UI.webp",
+    "sha256": "3325df1ffab38f826bffa5e4be11bb25a40ae25958cb1eaa9a15e0e26cf19de9",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_13",
+    "name": "莫特斐",
+    "characterId": "1204",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_13_UI.webp",
+    "sha256": "f1ca55bdc1802f748b9cc8fbb39089ca1e7f851cbcc28d1e2180086f1a4af459",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_14",
+    "name": "凌阳",
+    "characterId": "1104",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_14_UI.webp",
+    "sha256": "c05a5ff8272a4cbb3b3dbad9826d51188fa19e559c3f3f74b88b8a72d5496c28",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_15",
+    "name": "渊武",
+    "characterId": "1303",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_15_UI.webp",
+    "sha256": "2d2f2b48906424e7fc0b59f228b792587a6db6f8d5a3e8c1bc175f86d257b26d",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_17",
+    "name": "吟霖",
+    "characterId": "1302",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_17_UI.webp",
+    "sha256": "4953511efe0fc1b9516cbca1581b986926c36cb309e971dfaf3e97d29424b9ec",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_18",
+    "name": "卡卡罗",
+    "characterId": "1301",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_18_UI.webp",
+    "sha256": "cea42bbddc3a0b9784c7bf3420662524af8c35916b3ab30d25878ec3eeb50eef",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_23",
+    "name": "鉴心",
+    "characterId": "1405",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_23_UI.webp",
+    "sha256": "33ab5e202a98bf98d42d51f130502bc573191b5ec0b9eae9714e058566b26620",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_24",
+    "name": "今汐",
+    "characterId": "1304",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_24_UI.webp",
+    "sha256": "c1680aa793b4b33775dc07f537a527a2442c5a2c4e8ebf374ea1184445891dee",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_25",
+    "name": "相里要",
+    "characterId": "1305",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_25_UI.webp",
+    "sha256": "5e416d0cfda168f344066be1568b63f5058075a835b7e82874a0e8c1c742bc21",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_26",
+    "name": "长离",
+    "characterId": "1205",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_26_UI.webp",
+    "sha256": "6b768eb45a471ddd805eec5969e263a1bebfbf8f81b799fd42772f69a6dd4a98",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_27",
+    "name": "折枝",
+    "characterId": "1105",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_27_UI.webp",
+    "sha256": "85164f71f3c9410d98b669647a9175f480c71a20e9b00f9745a99af607d1f0f7",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_28",
+    "name": "守岸人",
+    "characterId": "1505",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_28_UI.webp",
+    "sha256": "ddbb04aeade5b704c09f5ea74922ba3cc85d12fbb8de556fc4b672b93dc52e8a",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_29",
+    "name": "椿",
+    "characterId": "1603",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_29_UI.webp",
+    "sha256": "36e4059ea883f7f6a33ca993f25957591673c63a9b81ccc8401c5792258a2224",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_30",
+    "name": "灯灯",
+    "characterId": "1504",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_30_UI.webp",
+    "sha256": "1b72ce808168b2d2918ac363b689a086247e4cc3cd9ff655afa925316e197f50",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_31",
+    "name": "釉瑚",
+    "characterId": "1106",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_31_UI.webp",
+    "sha256": "b16a26c3d2f00d58da0fc6101926827623636f900cd7284db5e91fb7326a1c4c",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_32",
+    "name": "珂莱塔",
+    "characterId": "1107",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_32_UI.webp",
+    "sha256": "627053b6141d6ba8ca987cc46716be1b32dc207fe2a069d3e50ee0bacadabb54",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_33",
+    "name": "洛可可",
+    "characterId": "1606",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_33_UI.webp",
+    "sha256": "538a8f364d6183954b162c8927fe41b2869e282b65bff496dea6a267e82a363c",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_34",
+    "name": "坎特蕾拉",
+    "characterId": "1607",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_34_UI.webp",
+    "sha256": "ce352c21d79d36a2c1effe44b24c2f169c7e7b8b0bef5d323f0f231778acf19e",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_37",
+    "name": "夏空",
+    "characterId": "1407",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_37_UI.webp",
+    "sha256": "8ba85e83c7e5b7f638fc990f91baabec50cc587b38d90830ac0f89bf95354477",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_38",
+    "name": "赞妮",
+    "characterId": "1507",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_38_UI.webp",
+    "sha256": "c45aced4f6201ccd9c65ca761372b5ca37c1274afaea7332c21aa7c90a92a494",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_40",
+    "name": "卡提希娅",
+    "characterId": "1409",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_40_UI.webp",
+    "sha256": "cc8e70f54af3ae9e0abafe3513ffc361efd315637de995fd7b78cf086037cb69",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_41",
+    "name": "弗洛洛",
+    "characterId": "1608",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_41_UI.webp",
+    "sha256": "1362991be1f43736856f3b45a20a73c2023236e4cbde122d7bbfdc04fd35959e",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_44",
+    "name": "布兰特",
+    "characterId": "1206",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_44_UI.webp",
+    "sha256": "98d3fb93e5076e0c128f906a6ecc0259625a6d88098aef7adb0ee4e60f77bf29",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_45",
+    "name": "菲比",
+    "characterId": "1506",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_45_UI.webp",
+    "sha256": "b8cbffba6baaf4bcf231d275a73581df0ce80e8657adabed6ad044596774c5f9",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_46",
+    "name": "露帕",
+    "characterId": "1207",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_46_UI.webp",
+    "sha256": "4122d316041688e25ee20b6e4b3c1dce2daff69cfbfddf78d9d7188c02259c2a",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_48",
+    "name": "尤诺",
+    "characterId": "1410",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_48_UI.webp",
+    "sha256": "78d8c9724b06bbf999099ccc98a104a20940de4553171d23a08875dee5109d9e",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_51",
+    "name": "奥古斯塔",
+    "characterId": "1306",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_51_UI.webp",
+    "sha256": "c4f5e1ceba25d71f7920accf11958e6d9db2fb4cfcc989bc14e572d632ed76bf",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_53",
+    "name": "爱弥斯",
+    "characterId": "1210",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_53_UI.webp",
+    "sha256": "e81d5db149c216ceee16779a8549c14bc69b83edcd8eb223a3da14154e18f91e",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_54",
+    "name": "陆·赫斯",
+    "characterId": "1510",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_54_UI.webp",
+    "sha256": "1bb9b7ce4d237b55c4db734e25741211c5102bb2dc3517c261ddeb12e2bb4eb9",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_55",
+    "name": "嘉贝莉娜",
+    "characterId": "1208",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_55_UI.webp",
+    "sha256": "eca3652f45467873b9d15da3b2308052a730a89c537848b180aec7708ab83419",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_56",
+    "name": "仇远",
+    "characterId": "1411",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_56_UI.webp",
+    "sha256": "fec72c1e7602342ccca8f11cbc00c49d95d36c07dc193d72629412228b26cbb9",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_57",
+    "name": "千咲",
+    "characterId": "1508",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_57_UI.webp",
+    "sha256": "7f2c564b9b426b56083f7aae9c0230b97d9f028d1768004785612661639425c4",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_58",
+    "name": "卜灵",
+    "characterId": "1307",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_58_UI.webp",
+    "sha256": "46c0f61bc700665228bf7b59ebc29d61c4af8d7363a75ffd05316b3c50770787",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_60",
+    "name": "琳奈",
+    "characterId": "1509",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_60_UI.webp",
+    "sha256": "4f8585cd599fee31dd38538678d802d96c4a3ecd19ef5826c4f940c625bb8800",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_61",
+    "name": "莫宁",
+    "characterId": "1209",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_61_UI.webp",
+    "sha256": "d52ad8861fc37cae8120dddffdea334141bb91b3ca095b3252efd8559bb52f5d",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_64",
+    "name": "达妮娅",
+    "characterId": "1211",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_64_UI.webp",
+    "sha256": "9c66e885466a4822619dd243ab2cda44064a033eb3ebc501334cdcedd76c9579",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_65",
+    "name": "西格莉卡",
+    "characterId": "1412",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_65_UI.webp",
+    "sha256": "ffd35c7f81eaecd93f8fc835f0710654cfc614bd825da2a7d1f1e40b2a08ddad",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_66",
+    "name": "洛瑟菈",
+    "characterId": "1109",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_66_UI.webp",
+    "sha256": "392f4a6fa40b7e294a06937853373c024f6b643296001a34668a5ee6928f3883",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_67",
+    "name": "绯雪",
+    "characterId": "1108",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_67_UI.webp",
+    "sha256": "ce157a9b05072f306c48e89a7220cc3a4accaab3eec7f1fbf1102fe17e97483d",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_68",
+    "name": "露西",
+    "characterId": "1511",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_68_UI.webp",
+    "sha256": "35ecea95fedd93712717ff1bec70496b130ced5a21dcea78ca565628f18990a7",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_69",
+    "name": "丽贝卡",
+    "characterId": "1308",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_69_UI.webp",
+    "sha256": "44f87f59173e4c3a4343cc153b763e2ea275405f433973bd33218220c2809a44",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_70",
+    "name": "秧秧·玄翎",
+    "characterId": "1610",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_70_UI.webp",
+    "sha256": "96b3361eb6836d035cfb79cc1575393191fead24b33ba335804698ae37c4ffc6",
+    "wifeEligible": true
+  },
+  {
+    "id": "ww_71",
+    "name": "穗穗",
+    "characterId": "1110",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_71_UI.webp",
+    "sha256": "4b29e9420635626deb81c00a5c7f8c98eb88d5e0ac5d849570c8b7a566822c0a",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_73",
+    "name": "清宵",
+    "characterId": "1413",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_73_UI.webp",
+    "sha256": "fb034d6b446860e6747f15ef97f4c057018a6462330e7010d66bf0c1f9d95d8f",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_74",
+    "name": "景燃",
+    "characterId": "1212",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_74_UI.webp",
+    "sha256": "abe613ab68fc0f2728da24cd1394ab3c75515cbcf453904a2632adaa65e129d6",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_75",
+    "name": "心",
+    "characterId": "1311",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_75_UI.webp",
+    "sha256": "1f0081704de2bff06b2ebc2a17a5a1930cb9130eeadb8f2215076b19625830f7",
+    "wifeEligible": false
+  },
+  {
+    "id": "ww_76",
+    "name": "锁暝",
+    "characterId": "1312",
+    "source": "https://static.nanoka.cc/assets/ww/UIResources/Common/Image/IconRoleHead256/T_IconRoleHead256_76_UI.webp",
+    "sha256": "13125dc4a080a27947d9b1cb25574048bf3c18e53514b0282aa2deaff3b8e844",
+    "wifeEligible": false
+  }
+]
